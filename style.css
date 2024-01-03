@@ -22,15 +22,14 @@ button {
     color: white;
 }
 
-.one, .two {
-    padding: 0px 15%;
+.one, .two, .three {
     height: 100vh;
 }
 
 /* Given Information for colors and font styles */
 
 /* dark background color (hero and footer) */
-.one {
+.one, .footer {
     background-color: #1F2937;
 }
  
@@ -41,7 +40,7 @@ button {
     color: #F9FAF8;
 }
 /* Hero secondary text, Header link text */
-a, .page {
+a, .subtext {
     font-size: 18px;
     color: #E5E7EB;
 } 
@@ -53,21 +52,21 @@ a, .page {
 }
 
 /* button color, call to action background-color */
-button{
+button {
     background-color: #3882F6;
 }
-/* Information header text  [Not yet declared]*/
+/* Information header text */
 .information {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
 }
 
-/* Quote section background color [Not yet declared]*/
+/* Quote section background color */
 .quote {
-    color:#E5E7EB;
+    background-color:#E5E7EB;
 }
-/* Quote text [Not yet declared]*/
+/* Quote text */
 .quote-text{
     font-size: 36px;
     color: #1F2937;
@@ -77,6 +76,7 @@ button{
 
 
 .one {
+    padding: 0px 15%;
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
@@ -117,6 +117,7 @@ button{
     flex: 1;
     display: flex;
     flex-flow: column wrap; 
+    align-items: flex-start;
 }
 
 .h1 {
@@ -140,6 +141,7 @@ button{
 }
 
 .two {
+    padding: 0px 15%;
     display: flex;
     flex-direction: column;
 }
@@ -162,11 +164,77 @@ button{
 }
 
 .info {
-    max-width: 350px;
+    max-width: 300px;
 }
 
 .imginfo {
     width: 150px;
     height: 150px;
     border-radius: 10px;
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20%;
+    flex: 3;
+}
+
+.quoter {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.action {
+    flex: 2;
+    padding: 0px 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-container {
+    width: 100%;
+    height: 40%;
+    background-color: #3882F6;
+    display: flex;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.button1 {
+    border: 2px solid white;
+    padding: 5px 20px;
+}
+
+.headtext {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.subtext {
+    font-size: 15px;
 }
